@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
-import "./index.css";
+import Manage from "./pages/Manage";
+//import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends React.Component {
@@ -17,9 +18,10 @@ class App extends React.Component {
         </div>
         <Router>
           <Switch>
-            <Route path="/" exact component={Signup}></Route>
+            <Route path="/" exact component={Login}></Route>
             <Route path="/login" component={Login}></Route>
             <Route path="/signup" component={Signup}></Route>
+            <Route path="/manage" component={Manage}></Route>
           </Switch>
         </Router>
       </div>
